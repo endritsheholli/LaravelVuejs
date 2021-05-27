@@ -1,0 +1,192 @@
+// Custom styles for this template
+
+.aside-menu {
+    .nav-tabs .nav-link,
+    .callout {
+        border-radius: 0;
+    }
+}
+
+.sidebar {
+    background: #fff;
+    .sidebar-nav, ul.nav {
+        width: $sidebar-width - 16px;
+    }
+}
+.card-cnt{
+    margin-top: 20px;
+    padding: 1.25em;
+    background: #fff;
+    border-radius: 4px;
+    min-height: 80vh;
+    /* The form-check-label */
+    .form-check-label {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    /* Hide the browser's default checkbox */
+    .form-check-label input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 3px;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .form-check-label:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .form-check-label input:checked ~ .checkmark {
+        background-color: #4dbd74;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .form-check-label input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .form-check-label .checkmark:after {
+        left: 9px;
+        top: 3px;
+        width: 8px;
+        height: 14px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+.pull-right{
+    float: right !important;
+}
+.btn-primary{
+    background: #4dbd74;
+    border-color: #4dbd74;
+    color: #fff;
+}
+.mb-20{
+    margin-bottom: 15px;
+}
+
+
+// Here you can add other styles
+
+.type-height {
+    height: 150px !important;
+}
+[data-toggle="collapse"]:after {
+    float: right !important;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f054";
+    transform: rotate(90deg) ;
+    transition: all linear 0.25s;
+}   
+[data-toggle="collapse"].collapsed:after {
+    transform: rotate(0deg) ;
+}
+
+.img-max-width {
+    max-width: 300px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+div.modal .modal-dialog.modal-400 {
+    width: 600px !important;
+}
+
+.modal-dialog.modal-400 > .modal-content {
+    width: 600px !important;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.hand-cursor {
+    cursor: pointer;
+}
+
+.brodered-row {
+    border-bottom: 1px solid #d1d4d7;
+    margin-bottom: 10px;
+}
+
+.inherit-size {
+    width: inherit;
+    height: inherit;
+    padding: 0;
+}
+
+.card-body-m {
+    margin: -15px -20px -34px -20px;
+}
+.card-header-m {
+    margin: -20px -20px -0 -20px;
+}
+
+#policy_date{
+    border: none !important;
+}
+
+.expiry-policy-1{
+    background-color: #f86c6b
+}
+
+.expiry-policy-2{
+    background-color: #f8cb00
+}
+
+.mr-10{
+    margin-right: 10px !important;
+}
+
+.card-footer-m{
+    margin: 20px -20px 0 -20px;
+}
+
+.active-app-route{
+    color: #fff !important;
+    background: #4dbd74 !important;   
+}
